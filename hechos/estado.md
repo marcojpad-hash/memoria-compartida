@@ -31,9 +31,19 @@ orquestador, dsh, máquina en el repo.
 - Commits: probe `73fd4c7a538dd28fe18d77e1c98208695ecacf98`;
   workflow `fcf4faf714a88c879e6bdef01052b897c5dc16ac`;
   documentación `65c8e1cd1617f5bca05ab80b386bccd2bd1ccc86`.
-- Estado: archivos creados en rama aislada. La consulta disponible
-  de checks no mostró ejecución ni resultado; por tanto el host aún
-  no está medido en evidencia y no se declara E2E activo.
+- Ejecución real confirmada: GitHub Actions run 42514758321 terminó
+  SUCCESS el 2026-11-08. Runner Ubuntu 24.04.5 LTS en Azure,
+  región chilecentral; 4 CPU; RAM total 16,760,344,576 bytes
+  (15.61 GiB), disponible 15,798,530,048 bytes; disco total
+  154,894,188,544 bytes. Prueba determinista PASS; SHA-256
+  5288a09b87518e21e896d41d696226cf38ae65f0d7ac026ca1c7bc2aad8ecb12.
+  Job 128835226991 y artifact 13630364569, conservado hasta
+  2026-12-08. Evidencia duradera en
+  `agente-cero-costo/runtime/evidence/2026-11-08-linux-probe-42514758321.json`.
+  Workflow: `agente-cero-costo/.github/workflows/runtime-linux-worker.yml`.
+- Estado: primer worker Linux activo y probado; host efímero por job.
+  No equivale aún a E2E de Floot: faltan claim/complete OIDC y publicar
+  runtime. PR #13 sigue draft; Oracle ARM 24 GB no provisionada.
 - No conectado todavía a claim/complete de Postgres/Floot. El PR #13
   sigue draft y sin merge. Oracle ARM 24 GB sigue sin provisionar.
 - Siguiente cierre: obtener el run/artifact real, luego integrar
