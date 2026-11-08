@@ -46,6 +46,34 @@ orquestador, dsh, máquina en el repo.
   runtime. PR #13 sigue draft; Oracle ARM 24 GB no provisionada.
 - No conectado todavía a claim/complete de Postgres/Floot. El PR #13
   sigue draft y sin merge. Oracle ARM 24 GB sigue sin provisionar.
-- Siguiente cierre: obtener el run/artifact real, luego integrar
-  claim/complete con OIDC y publicar runtime. Sin cambios en CAPCOT
-  ni Motor U6.
+
+## Runtime multiagente — integración y escalado (2026-11-08)
+
+- Se añadió `runtime/EXECUTION_CONTRACT.md` en
+  `agente-cero-costo`, rama `runtime-linux-worker-20261108`,
+  commit `e91b10c213d57e2c663c1dfd7ae3598790f62c94`.
+- El contrato fija el ciclo queue -> OIDC claim -> ejecución de tareas
+  allowlisted -> OIDC complete -> evidencia/artifacts, con leases,
+  idempotencia, reintentos y dead-letter.
+- Tipos iniciales permitidos: `linux_probe`, `repo_status`,
+  `python_tests`, `capcot_text_package_validation` y
+  `u6_readonly_validation`. No se permite shell ni código arbitrario.
+- La plantilla se clonará para workers paralelos solo después de pasar
+  la prueba E2E. Los workers compartirán la cola y el contrato de memoria;
+  no se sumará artificialmente la RAM entre runners.
+- Próximo trabajo: implementar endpoints Floot `claim` y `complete`,
+  cablear el workflow con OIDC, probar un job real de extremo a extremo
+  y publicar el runtime. No modificar CAPCOT ni Motor U6 en esta fase.
+- El consumo diario de acciones de Floot estaba agotado y su reinicio
+  estaba previsto para 2026-11-09 06:00 UTC (00:00 CDMX); por eso la
+  implementación Floot queda para después del reinicio, sin gastar
+  acciones en lecturas/escrituras exploratorias.
+
+## Límites confirmados
+
+- El runner GitHub-hosted es efímero; se solicita uno por ejecución.
+- El PR #13 de eventos sigue draft y no se fusiona como parte de este
+  trabajo.
+- No se han creado workers clonados ni se afirma que exista todavía
+  ejecución E2E desde la cola.
+- CAPCOT y Motor U6 permanecen sin cambios.
