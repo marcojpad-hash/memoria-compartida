@@ -20,3 +20,5 @@
   (transmigración). (2026-11-08)
 - Los modelos que viven en su app leen el estado público y emiten
   con el bloque [EMITIR] (conector). (2026-11-08)
+
+- **Memoria compartida como gate universal:** todo modelo/agente debe leer `PROTOCOLO_MEMORIA_COMPARTIDA_OBLIGATORIA.md`, `INDICE.md` y los hechos pertinentes antes de cualquier tarea en cualquier repositorio; al cerrar debe sincronizar hechos durables verificados. El gate quedó anclado en `AGENTS.md` y `README.md` de los nueve repositorios del stack. (2026-11-08; commits de anclaje en cada repositorio)
