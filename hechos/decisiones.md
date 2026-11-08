@@ -20,5 +20,18 @@
   (transmigración). (2026-11-08)
 - Los modelos que viven en su app leen el estado público y emiten
   con el bloque [EMITIR] (conector). (2026-11-08)
-
-- **Memoria compartida como gate universal:** todo modelo/agente debe leer `PROTOCOLO_MEMORIA_COMPARTIDA_OBLIGATORIA.md`, `INDICE.md` y los hechos pertinentes antes de cualquier tarea en cualquier repositorio; al cerrar debe sincronizar hechos durables verificados. El gate quedó anclado en `AGENTS.md` y `README.md` de los nueve repositorios del stack. (2026-11-08; commits de anclaje en cada repositorio)
+- **Memoria compartida como gate universal:** todo modelo/agente debe
+  leer el protocolo, índice y hechos pertinentes antes de cualquier
+  tarea; al cerrar sincroniza hechos durables verificados. (2026-11-08)
+- **Restricción económica absoluta:** no comprar, contratar, actualizar
+  planes, habilitar pruebas con cobro ni aprovisionar recursos que
+  puedan generar cargos. No hay autorización para compras; la ausencia
+  de tarjetas vinculadas es una protección deliberada que debe
+  conservarse. Usar exclusivamente recursos gratuitos/créditos ya
+  disponibles, sin eludir límites de proveedores. Cualquier opción que
+  implique costo potencial se descarta sin ejecutarla. (2026-11-08)
+- **Arquitectura de ejecución:** conservar el worker efímero de GitHub
+  Actions y desarrollar por separado un escritorio virtual persistente
+  únicamente si puede obtenerse sin costo y sin riesgo de cargos.
+  Ambos son complementarios; no sustituir ni eliminar el worker.
+  (2026-11-08)
