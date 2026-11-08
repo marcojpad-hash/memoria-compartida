@@ -1,5 +1,7 @@
 # Índice
 
+- `../PROTOCOLO_MEMORIA_COMPARTIDA_OBLIGATORIA.md` — gate obligatorio de lectura y sincronización para todos los modelos/repositorios.
+
 Lee esto primero. Una línea por tema. Lee solo los archivos que tu
 tarea necesita.
 
