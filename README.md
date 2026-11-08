@@ -1,5 +1,7 @@
 # Memoria compartida
 
+> **Gate obligatorio para todo modelo y todo repositorio:** [PROTOCOLO_MEMORIA_COMPARTIDA_OBLIGATORIA.md](PROTOCOLO_MEMORIA_COMPARTIDA_OBLIGATORIA.md). Antes de cualquier trabajo, leer `INDICE.md` y los hechos pertinentes; al cerrar, sincronizar hechos durables. No es opcional.
+
 Memoria persistente y consistente para los modelos del stack, para que
 no alucinen. Un solo lugar con los hechos verificados, las decisiones
 y las correcciones. Cualquier modelo, en cualquier sesión, de cualquier
