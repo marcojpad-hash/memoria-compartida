@@ -6,7 +6,9 @@
   con voz es-MX-JorgeNeural, corre QA y programa.
 - **Motor U6** (marcojpad-hash/motor-u6-storage, privado): proyecto
   aparte, no parte de CAPCOT. Engine V5 canónico y catálogo 244 son
-  la referencia fija.
+  la referencia fija. Runners: Meta le pasó runners a Marco
+  (2026-11-07); Marco se los dio a ChatGPT para adaptarlos e
+  integrarlos. Estado sin verificar (2026-11-08).
 - **agente-cero-costo** (público): stack de agente a costo cero —
   puente Groq, dsh, orquestador, puente de lectura, máquina en el
   repo, transmigración, sanguijuela, avisos, conector.
