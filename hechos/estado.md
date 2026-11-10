@@ -54,3 +54,13 @@ orquestador, dsh, máquina en el repo.
 
 - Mpemba (Imaginantes, cápsula CAPCOT): v2 relevo APROBADA en fragmento por Marco el 2026-11-09 (80.12 s, Kokoro em_santa 0.85, QA PASA); montaje OFICIAL por Imaginantes (JorgeNeural, 89.83 s, QA OK) hecho el 2026-11-10 y programado para el 2026-11-11 13:30 CST (YouTube HSgrnejAcaI).
 - NO volver a montar Mpemba: ya hay dos versiones hechas. Detalle en `hechos/proyectos.md`.
+
+
+## Actualización VoxCPM2 — 2026-11-10
+
+- El paquete VoxCPM2 para la microserie «La heredera que vendieron» está publicado en `marcojpad-hash/microserie-heredera-voces`, rama `main`: `.github/workflows/voxcp2-cpu.yml`, `scripts/generar_muestras.py`, `muestras.json` y su README de operación.
+- El script usa `openbmb/VoxCPM2` (2B), Voice Design con texto de control en inglés y líneas en español, CPU, Python 3.11, 48 kHz; genera Camila/Carmen/Don Emilio con seeds 42/43/44, carga el modelo una sola vez y produce WAV + manifiesto de corrida.
+- No hay evidencia en esta sesión de ejecución real de VoxCPM2, WAV generado, reproducción ni escucha humana. No declarar muestra terminada ni calidad escuchada.
+- El README del repo se corrigió y releyó; commit `7867ff8e097ec4df544ccc8dcf6cb04ee10077a1`. Se reemplazó el estado obsoleto «solo local / nada subido» por el estado comprobado en GitHub.
+- El disparo sigue condicionado a confirmar que la corrida #3 de SadTalker quedó resuelta, tal como indica el expediente previo. Esta sesión no dispone de una acción GitHub `workflow_dispatch`; no se disparó Actions ni se intentó eludir la compuerta.
+- Fuente: lectura directa de los tres archivos y README en GitHub, rama `main`, 2026-11-10; verificación posterior del README tras el commit citado.
