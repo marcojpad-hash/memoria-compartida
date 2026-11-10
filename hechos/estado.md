@@ -41,3 +41,13 @@ orquestador, dsh, máquina en el repo.
 - Último run de dispatch conocido: 1-nov, falla literal `Falta configurar GROK_WEBHOOK_URL.`; no hay ejecución posterior de la versión actual. TTS smoke 8-nov solo verificó instalación/compilación/CLI, no audio.
 - El runtime local no se pudo obtener (`Could not resolve host: github.com`); los validadores/helpers Python no se ejecutaron, solo revisión estática. No se modificaron `data/*.json`, storyboards, estados Grok, workflows, secretos, permisos ni `main`; no se generaron medios ni se consumieron créditos.
 - Bitácora de coordinación CAPCOT actualizada en el commit `9c044710cca94a7a863bd81d1e4c04b251a11ab1`.
+
+## Actualización CAPCOT — 2026-11-10
+
+- Radar diario guardado y releído en `marcojpad-hash/capcot-capsulas-imaginantes/docs/briefs/2026-11-10_RADAR_CAPCOT.md`, rama `feature/capcot-video-discovery-continuity`, commit `fb4f2fecfca36fb387d69ecd14a23f6ff9730ad9`.
+- Borrador guardado y releído en `proyectos/2026-11-10_comida-aprendizaje-sabor-nutriente/storyboard.json`, commit `29a79447241ec2116c5b9e59a3773e1feb8c0c26`. Fecha objetivo 10-nov, slot_local 13:30 dentro de la ventana de mediodía en prueba; no equivale a programación.
+- Validación posterior desde GitHub: JSON parseado; 8 escenas, 192 palabras, 78 s de escenas + 6 s de cortinilla = 84 s; voz es-MX-JorgeNeural +7%, -2Hz; estilo claymation con prompt_base literal; mapa UCSF Mission Bay con coordenadas 37.76873, -122.39258 y advertencia de que es afiliación institucional, no lugar exacto del experimento; capa de mecanismo dato/gráfico presente.
+- Compuerta: `approved_assets=[]`, `export.render_status=NOT_GENERATED`, sin `export.filename` ni rutas de medios, `publicacion.status=PENDIENTE_DECISION_GROK`; no existe `narrative_qa`. El borrador permanece solo en proyectos/ y no está en cola/entrada; auditor independiente conserva PASS/FAIL.
+- Se crearon exactamente dos entregables para la fecha: radar y storyboard. No se modificaron `data/*.json`, workflows, main, motores canónicos ni Motor U6; no se generaron medios, no se publicó ni programó y no se consumieron créditos.
+- Los cinco DOI del radar permanecen PENDIENTE_RESOLVEDOR porque Crossref y el resolvedor no completaron acceso; las páginas primarias y el registro PubMed sí fueron consultados. El informe técnico Meta/Google no se reescribió porque no apareció un cambio oficial nuevo sustentado.
+- La lectura de QA preexistente de los doce canónicos 5–7 nov y el robot del 9-nov, además de los storyboards recientes sin campo narrative_qa, queda detallada en el radar. No se modificó ningún QA.
