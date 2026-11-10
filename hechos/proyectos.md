@@ -20,3 +20,4 @@
   multi-modelo; lo está armando alguien más.
 - **memoria-compartida** (privado, este repo): la memoria persistente
   y consistente de los modelos.
+- **Mpemba** (Imaginantes, cápsula CAPCOT): v2 relevo APROBADA en fragmento por Marco el 2026-11-09 (80.12 s, Kokoro em_santa 0.85, QA PASA); montaje OFICIAL por Imaginantes (JorgeNeural, 89.83 s, QA OK) hecho el 2026-11-10 y programado para el 2026-11-11 13:30 CST (YouTube HSgrnejAcaI). NO volver a montar Mpemba: ya hay dos versiones hechas.
