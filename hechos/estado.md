@@ -6,13 +6,12 @@ Foto del 2026-11-08. El estado vivo está en el tablero de CAPCOT
 
 ## Pendientes (tablero CAPCOT, 5)
 
-1. Montar la cápsula Mpemba (Imaginantes, pausado por créditos).
-2. Montar la cápsula Barreleye con 2 arreglos de texto (Imaginantes,
+1. Montar la cápsula Barreleye con 2 arreglos de texto (Imaginantes,
    pausado por créditos).
-3. Subir los workflows de seguridad de CAPCOT (Marco, por navegador).
-4. Activar la seguridad nativa en GitHub (Marco, manual).
-5. Crear cuenta gratuita de Clayzo (Marco).
-6. Verificar si los runners de Meta fueron adaptados e integrados
+2. Subir los workflows de seguridad de CAPCOT (Marco, por navegador).
+3. Activar la seguridad nativa en GitHub (Marco, manual).
+4. Crear cuenta gratuita de Clayzo (Marco).
+5. Verificar si los runners de Meta fueron adaptados e integrados
    por ChatGPT al motor U6 (Pecas, en revisión 2026-11-08).
 
 ## Stack agente-cero-costo (versión 4, 2026-11-08)
@@ -51,3 +50,7 @@ orquestador, dsh, máquina en el repo.
 - Se crearon exactamente dos entregables para la fecha: radar y storyboard. No se modificaron `data/*.json`, workflows, main, motores canónicos ni Motor U6; no se generaron medios, no se publicó ni programó y no se consumieron créditos.
 - Los cinco DOI del radar permanecen PENDIENTE_RESOLVEDOR porque Crossref y el resolvedor no completaron acceso; las páginas primarias y el registro PubMed sí fueron consultados. El informe técnico Meta/Google no se reescribió porque no apareció un cambio oficial nuevo sustentado.
 - La lectura de QA preexistente de los doce canónicos 5–7 nov y el robot del 9-nov, además de los storyboards recientes sin campo narrative_qa, queda detallada en el radar. No se modificó ningún QA.
+## Actualización Mpemba — 2026-11-10
+
+- Mpemba (Imaginantes, cápsula CAPCOT): v2 relevo APROBADA en fragmento por Marco el 2026-11-09 (80.12 s, Kokoro em_santa 0.85, QA PASA); montaje OFICIAL por Imaginantes (JorgeNeural, 89.83 s, QA OK) hecho el 2026-11-10 y programado para el 2026-11-11 13:30 CST (YouTube HSgrnejAcaI).
+- NO volver a montar Mpemba: ya hay dos versiones hechas. Detalle en `hechos/proyectos.md`.
