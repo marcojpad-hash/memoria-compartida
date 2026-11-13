@@ -20,3 +20,5 @@ marca como reemplazado.
 - **El texto del issue de escala está desactualizado**: dice que la
   creación de repos "no se puede automatizar". Ver la primera
   corrección de esta lista. (2026-11-08)
+
+- **CAPCOT 5–7 nov — recuento de publicaciones preexistentes:** al 2026-11-13, la evidencia exacta por `project_id` enlaza cinco proyectos (Palomitas, Ranas, Aguacate, Ballena y Hielo), no siete. Los IDs globales de Venus y Arena no se pueden atribuir sin `project_id`/slot. Reemplaza el recuento preliminar de siete en la actualización CAPCOT del 2026-11-13 de `hechos/estado.md`. Fuente: `data/horario_2026-11-08.json` a `data/horario_2026-11-11.json` y `docs/briefs/2026-11-13_CONTROL_COLA.md` en `capcot-capsulas-imaginantes`, rama `feature/capcot-video-discovery-continuity`.
