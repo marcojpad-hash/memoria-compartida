@@ -76,3 +76,14 @@ orquestador, dsh, máquina en el repo.
 - El workflow solo acepta `cola/entrada/*.json` de primer nivel; `procesar_cola.py` acepta carpetas anidadas y `--fecha` histórica, filtrando por prefijo de ruta. `registro_editorial.py` no incorpora cierres diarios, horario semanal, bloqueados ni handoffs. Las tablas `data/temas_del_dia`, `rotacion`, `estilos_usados`, `vistas_historico` y `balances_6h` siguen con cortes 28–31 oct.
 - No se obtuvo runtime local ni acceso al listado/logs recientes de Actions. No se modificaron `data/*.json`, `main`, workflow, secretos, permisos ni estados Grok; no se generaron medios ni se consumieron créditos.
 - Fuente: lectura y relectura directa de GitHub en la rama feature y `main` solo para evidencias de publicación; informe citado y PubMed, 2026-11-13.
+
+## Actualización CAPCOT — auditoría 2026-11-15
+
+- Control creado y releído en `marcojpad-hash/capcot-capsulas-imaginantes/docs/briefs/2026-11-15_CONTROL_COLA.md`, rama `feature/capcot-video-discovery-continuity`, commit `cafe18e636476bc9fa73a10af54b5b631802d4c8`.
+- Día 15-nov: dos borradores en `proyectos/`; diapausa de `Lestes sponsa` PASS narrativo 90 y cuásares FAIL 82. No hay entradas de cola ni estados Grok; no se promovió ninguno. DOI de ambos continúa PENDIENTE_RESOLVEDOR; validación Python/Crossref no ejecutada.
+- Lote 5–7 re-auditado y releído: 2 PASS (Venus 88, Arena 94), 10 FAIL. Pulpo cambió de 80 a 72 tras verificar que el DOI 10.1038/s41586-023-06203-4 estudia `Octopus laqueus`, no `O. insularis` (Nature: https://www.nature.com/articles/s41586-023-06203-4). Los 12 horarios y temas coinciden; árboles conserva el tema canónico de redes micorrícicas.
+- Estructura del lote: 510 campos narrativos ausentes en 85 escenas; 75 arrays SFX vacíos sin silencio explícito; árboles 169 palabras y sin capas mapa/dato. Ninguno apto estructuralmente.
+- Cinco proyectos con procesamiento/publicación/programación preexistente (Palomitas, Ranas, Aguacate, Ballena, Hielo) quedan protegidos contra redispatch. Los MP4 referenciados no están en el árbol GitHub: MEDIOS_NO_VERIFICADOS_EN_REPOSITORIO.
+- El workflow escucha solo `cola/entrada/*.json`; el procesador acepta `--fecha` histórica; el registro editorial no incluye bloqueados, handoffs ni el estado diario de slots. El estado 15-nov registra cinco slots, pero 19:00 contradice la política que lo retiró. Los estados Grok consultados devuelven 404.
+- No se modificaron `data/*.json`, estados Grok, workflow, secretos, permisos ni `main`; no hubo dispatch, medios, publicación ni consumo de créditos. Revisión estática, sin runtime local.
+- Fuente: lectura y relectura directa de GitHub en la rama feature, run #147/log de Actions y página primaria de Nature, 2026-11-15.
