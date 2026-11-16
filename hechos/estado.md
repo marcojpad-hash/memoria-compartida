@@ -87,3 +87,28 @@ orquestador, dsh, máquina en el repo.
 - El workflow escucha solo `cola/entrada/*.json`; el procesador acepta `--fecha` histórica; el registro editorial no incluye bloqueados, handoffs ni el estado diario de slots. El estado 15-nov registra cinco slots, pero 19:00 contradice la política que lo retiró. Los estados Grok consultados devuelven 404.
 - No se modificaron `data/*.json`, estados Grok, workflow, secretos, permisos ni `main`; no hubo dispatch, medios, publicación ni consumo de créditos. Revisión estática, sin runtime local.
 - Fuente: lectura y relectura directa de GitHub en la rama feature, run #147/log de Actions y página primaria de Nature, 2026-11-15.
+
+
+## Corrección y reconciliación multi-modelo — 2026-11-15, 20:05 CST
+
+Esta actualización sustituye las afirmaciones anteriores de la sección «Actualización CAPCOT — auditoría 2026-11-15» que indicaban que Lestes seguía sin cola/validación y que ambos DOI permanecían pendientes.
+
+### CAPCOT
+
+- **Lestes sponsa:** QA narrativo independiente PASS/90. Amor ejecutó localmente el validador Python real con `--check-doi`: exit 0 y DOI `10.1038/s41598-026-80392-6` resuelto. El storyboard de `proyectos/` y la copia de validación en `cola/entrada/2026-11-15_dato-dia-diapausa-lestes-sponsa/` son idénticos (blob `09500f5ccb8cf4261c69eb4bff543595acf7fe0e`). El paquete contiene `storyboard.json`, `fuentes.md` y `ESTADO_EJECUCION.md`. No se generaron medios. No hay `cola/estado/<id>.json` ni acuse Grok; la recepción no está confirmada.
+- **Cuásares:** auditoría narrativa independiente del trabajador Groq entregada en CAPCOT PR #13: 13 hallazgos, 9 pendientes y 4 conformes/por diseño, sobre commit `54c8ade`. ChatGPT aplicó correcciones narrativas y estructurales en PR #14, rama `chatgpt/quasar-audit-fixes-20261115`, head `e662fb8e0fe323cb9385eddf72a0946dc2a1be68`: 8 escenas, 175 palabras, 84 s, 8/8 `asset_filename`. El FAIL/82 histórico se conserva. DOI/validador y nueva auditoría independiente quedan pendientes de integrar el PR #14.
+- **Grok:** no hay recepción individual; el trabajador Groq es otro servicio y no equivale a Grok/Imaginantes. El flujo automático actual escucha JSON de primer nivel, mientras el procesador local admite la carpeta anidada; no se inventó un acuse.
+
+### Motor U6
+
+- Mozart PR #14 está fusionado en `alterno/reconexion-2a1` (merge `f478d03`), con 22/22 verificaciones. El artefacto `motor/REVISION_CHATGPT_MOZART_20261113.md` ya existe en esa rama (commit `ada99a37`), entregado por el otro chat asignado. No duplicar ni reejecutar Mozart.
+- El snapshot programado de auditoría del 15-nov-2026 11:42 CST terminó correctamente; no equivale a una ejecución nueva del motor.
+- La orden U6 #10 del supervisor se cerró después de una ejecución corregida con éxito (run `43404437760`). El PR reutilizable #62 en `agente-cero-costo` sigue abierto y divergente de `main` (31 ahead, 3 behind; `mergeable=false`); no se fusionó.
+- PR #1 POE-U6 v0.2 sigue abierto como borrador. No hay Issues abiertos en U6 que pidan trabajo a ChatGPT.
+
+### Migración entre modelos
+
+- El acuse formal del destinatario en `ChatGPT-migracion/bandeja/2026-11-03_RECUPERACION_MIGRACION.md` sigue pendiente. No se simula ni se escribe en nombre del otro modelo. La migración permanece incompleta.
+- No se trasladó ninguna tarea a Marco; no se modificó el motor canónico ni se reejecutó Mozart.
+
+**Fuentes de estado:** GitHub CAPCOT PR #13 y PR #14; commits Lestes `0c7dcac` y `8e0bf3e`; Motor U6 PR #14/merge `f478d03`, issue #10 y run `43404437760`; PR central #62; revisión de la bandeja de migración. Revisión 2026-11-15.
