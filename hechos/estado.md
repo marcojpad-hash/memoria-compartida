@@ -112,3 +112,11 @@ orquestador, dsh, máquina en el repo.
 - El workflow de Grok solo acepta JSON de primer nivel en `cola/entrada/*.json`; el procesador admite carpetas anidadas y `--fecha` histórica, y no coteja de forma obligatoria `fecha_objetivo` con el prefijo de ruta. `registro_editorial.py` no lee sidecars sociales, bloqueados ni handoffs. Último run específico de dispatch disponible: #147 (1-nov), fallo literal `Falta configurar GROK_WEBHOOK_URL.`; el TTS smoke #6 (8-nov) no es dispatch.
 - Los ledgers `temas_del_dia`, `estilos_usados`, `rotacion`, `publicaciones` y `cola` tienen cortes entre 28-oct y 1-nov; no hay horario diario 17-nov. `endscreens_rotacion` sí se actualizó 17-nov, pero contiene vistas/IDs, no estado editorial completo.
 - No había runtime local: revisión estática. No se modificaron `data/*.json`, workflow, secretos, permisos, `main` ni estados Grok; no se disparó Actions, no se generaron medios ni se consumieron créditos. El lote sigue abierto.
+
+
+## Actualización CAPCOT — 2026-11-22
+
+- Se detectó un defecto de tipado en `scripts/validar_storyboard.py`: Python convierte booleanos JSON a números (`True`→1.0, `False`→0.0), por lo que coordenadas terrestres, celestes y bounds podían aceptar booleanos como valores geográficos.
+- Corrección propuesta en PR #15: https://github.com/marcojpad-hash/capcot-capsulas-imaginantes/pull/15, rama `fix/capcot-map-coordinate-types-20261122` contra `feature/capcot-video-discovery-continuity`. El validador rechaza booleanos en lat/lon, RA/Dec y bounds; se añadieron cuatro pruebas. Archivos releídos desde GitHub; blobs del último estado: validador `8db6491463c109db509717605db49653e50c9f71`, pruebas `a531922921cc3f1b880ca1c25d9eb8a7ca66ef42`.
+- PR abierto, no fusionado; última lectura: mergeable=true. Ejecución de pruebas/CI pendiente: el conector de esta sesión no ejecuta Python y no se disparó ningún workflow. No se modificaron CAPCOT `main`, `data/*.json`, cola, estados Grok, workflows, secretos ni permisos; no se generaron medios ni se publicaron cápsulas.
+- También se comprobó que la ruta Atlas pedida en la Issue #10 no existe en el árbol Git de la rama feature (1,337 entradas, árbol no truncado); la evidencia y solicitud de corregir la ruta se dejaron como comentario en la Issue. Fuente: lectura GitHub, 2026-11-22.
