@@ -150,3 +150,8 @@ orquestador, dsh, máquina en el repo.
 - data/publicaciones.json registra YouTube ZG4iQgmWrLI, 21-nov 19:00 CDMX, publishAt 2026-11-22T01:00:00Z y privacidad private→public (publishAt); metadata.json conserva privacyStatus=private. TikTok/Facebook figuran programados sin IDs públicos. No se verificó que ya sea público.
 - El registro audiovisual indica 21/21 y 87.57 s; no sustituye narrative_qa. El marker de handoff no confirma Grok y cola/estado sigue ausente. Clasificación: PROCESAMIENTO_PREEXISTENTE_NO_REDISPATCHAR.
 - Fuente: árbol main, cola/entrada/2026-11-09_dato-robot-ensambla-orbita, data/publicaciones.json y brief CAPCOT 2026-11-24, relectura 2026-11-24.
+
+
+## Corrección de referencia CAPCOT — 2026-11-24
+
+El control del 24-nov recibió una precisión adicional sobre la procedencia del video_id del robot orbital y se releyó de nuevo. La versión final del brief es commit fb4e14abaaa8fba64de932e65eec81e4f595a252, blob d8198d4d96bc9d34235519016e33e5e6ccdd9f19. La referencia anterior b28febd2d214baec6df46926ae324f4d9a5fa72f corresponde a una versión intermedia, no a la final.
