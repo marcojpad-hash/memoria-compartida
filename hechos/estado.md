@@ -142,3 +142,11 @@ orquestador, dsh, máquina en el repo.
 - No hay estado individual cola/estado para los expedientes consultados: RECEPCION_GROK_NO_CONFIRMADA. Los markers de handoff no se consideran recepción.
 - Kuroshio: ESTADO_EJECUCION.md se actualizó y releyó con run #45477532530. El validador completo terminó OK; no incluyó --check-doi, por lo que Crossref sigue pendiente. Commit de actualización documental: ba92e02ac0076041a32ca809f91cc3e2d4cb89bf.
 - Fuente: rama feature y main de capcot-capsulas-imaginantes; brief y estado de ejecución citados, 2026-11-24.
+
+
+## Actualización CAPCOT — robot orbital, 2026-11-24
+
+- El paquete 2026-11-09_dato-robot-ensambla-orbita tiene medios reales en main/cola/entrada: capsula.mp4, portada, nueve frames y subtítulos. La copia de feature sigue sin medios y en ruta anidada no dispatchable.
+- data/publicaciones.json registra YouTube ZG4iQgmWrLI, 21-nov 19:00 CDMX, publishAt 2026-11-22T01:00:00Z y privacidad private→public (publishAt); metadata.json conserva privacyStatus=private. TikTok/Facebook figuran programados sin IDs públicos. No se verificó que ya sea público.
+- El registro audiovisual indica 21/21 y 87.57 s; no sustituye narrative_qa. El marker de handoff no confirma Grok y cola/estado sigue ausente. Clasificación: PROCESAMIENTO_PREEXISTENTE_NO_REDISPATCHAR.
+- Fuente: árbol main, cola/entrada/2026-11-09_dato-robot-ensambla-orbita, data/publicaciones.json y brief CAPCOT 2026-11-24, relectura 2026-11-24.
