@@ -131,3 +131,14 @@ orquestador, dsh, máquina en el repo.
 
 
 - **Seguimiento PR #15 — 2026-11-22 08:46Z:** la supresión Semgrep de HTTPSConnection se ajustó al ID completo de regla. Último commit del PR: `30101e9aca8aaafb8d1894df30574a66067ff4a8`; blob del validador `a52a2f46a4f579f1b5e38c1bb0da352e3bf74f3c`; pruebas `fc99125a8e47938433cd5857490ffd17d7c22452`. Nueva ejecución Semgrep #45004335607 quedó QUEUED al registrar este apunte. La ejecución anterior #45004241269 confirmó que el aviso dynamic-urllib desapareció, pero detectó HTTPSConnection; el ajuste actual aún no tiene resultado de CI. Pruebas unitarias siguen sin ejecutarse.
+
+
+## Actualización CAPCOT — auditoría 2026-11-24
+
+- Control actualizado y releído: [docs/briefs/2026-11-24_CONTROL_COLA.md](https://github.com/marcojpad-hash/capcot-capsulas-imaginantes/blob/feature/capcot-video-discovery-continuity/docs/briefs/2026-11-24_CONTROL_COLA.md), commit b28febd2d214baec6df46926ae324f4d9a5fa72f.
+- La rama feature tiene 90 storyboard.json en proyectos/ y ninguno con fecha objetivo 24-nov. No hay entradas de cola del día en feature. Main tiene un paquete de magnetismo del 24-nov en ruta anidada, sin narrative_contract ni narrative_qa, fuera de duración y con asset_filename; no es dispatchable ni apto para preproducción.
+- Lote canónico 5–7 nov: identidad de los doce IDs coincide con el horario. Narrative QA persistido: 2 PASS (Venus 88, Arena 94), 10 FAIL. Estructura 0/12 apta: 510 campos narrativos ausentes, 75/85 escenas sin SFX, Árboles 169 palabras y sin mapa/dato. No se promovió ninguno.
+- Evidencia diaria revalidada: Palomitas, Ranas, Aguacate y Ballena tienen registros YT/TT publicados en los diarios 8–11 nov; Hielo tiene programación/producción preexistente en main. El ledger main de publicaciones solo contiene Hielo entre esos doce; los cuatro diarios no están consolidados allí. No redispatchar esos cinco. La nota de siete sidecars del 16-nov permanece como evidencia separada y no fue recontada en este run.
+- No hay estado individual cola/estado para los expedientes consultados: RECEPCION_GROK_NO_CONFIRMADA. Los markers de handoff no se consideran recepción.
+- Kuroshio: ESTADO_EJECUCION.md se actualizó y releyó con run #45477532530. El validador completo terminó OK; no incluyó --check-doi, por lo que Crossref sigue pendiente. Commit de actualización documental: ba92e02ac0076041a32ca809f91cc3e2d4cb89bf.
+- Fuente: rama feature y main de capcot-capsulas-imaginantes; brief y estado de ejecución citados, 2026-11-24.
