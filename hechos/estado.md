@@ -158,7 +158,7 @@ El control del 24-nov recibió una precisión adicional sobre la procedencia del
 
 ## Actualización CAPCOT — auditoría 2026-11-25
 
-- Control de cola de 25-nov creado y releído en feature: `docs/briefs/2026-11-25_CONTROL_COLA.md`, commit `edc6c941e29c99732a09faa5716d0538b3eeb6e7`, blob `d1a058ef73f83032f928c64659cdba96514c952e`.
+- Control de cola de 25-nov creado y releído en feature: `docs/briefs/2026-11-25_CONTROL_COLA.md`, commit `5412d56e52a7f1e3b994968cee6eafd78eeb35a7`, blob `811b406de03e40acec2f25170196d5bf52ef344b`.
 - Feature tenía 90 storyboards y cero proyectos/entradas del 25-nov; main tenía diez storyboards del 25-nov: nueve reworks con programación/producción preexistente y un paquete React anidado. Los nueve reworks no tienen narrative_qa en sus JSON y los informes históricos discrepan; no se eligió un score no persistido. React recibió lectura en frío FAIL/42 en el informe, sin modificar main.
 - Lote 5–7 nov: 12 QA narrativos persistidos (Venus PASS/88, Arena PASS/94, diez FAIL); estructura 0/12 apta por 510 campos narrativos ausentes y 75 arrays SFX vacíos. No se promovió ninguno.
 - No hay `cola/estado/*.json` en feature ni main. Se mantiene RECEPCION_GROK_NO_CONFIRMADA; markers de handoff no equivalen a recepción.
