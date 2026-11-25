@@ -155,3 +155,15 @@ orquestador, dsh, máquina en el repo.
 ## Corrección de referencia CAPCOT — 2026-11-24
 
 El control del 24-nov recibió una precisión adicional sobre la procedencia del video_id del robot orbital y se releyó de nuevo. La versión final del brief es commit fb4e14abaaa8fba64de932e65eec81e4f595a252, blob d8198d4d96bc9d34235519016e33e5e6ccdd9f19. La referencia anterior b28febd2d214baec6df46926ae324f4d9a5fa72f corresponde a una versión intermedia, no a la final.
+
+## Actualización CAPCOT — auditoría 2026-11-25
+
+- Control de cola de 25-nov creado y releído en feature: `docs/briefs/2026-11-25_CONTROL_COLA.md`, commit `edc6c941e29c99732a09faa5716d0538b3eeb6e7`, blob `d1a058ef73f83032f928c64659cdba96514c952e`.
+- Feature tenía 90 storyboards y cero proyectos/entradas del 25-nov; main tenía diez storyboards del 25-nov: nueve reworks con programación/producción preexistente y un paquete React anidado. Los nueve reworks no tienen narrative_qa en sus JSON y los informes históricos discrepan; no se eligió un score no persistido. React recibió lectura en frío FAIL/42 en el informe, sin modificar main.
+- Lote 5–7 nov: 12 QA narrativos persistidos (Venus PASS/88, Arena PASS/94, diez FAIL); estructura 0/12 apta por 510 campos narrativos ausentes y 75 arrays SFX vacíos. No se promovió ninguno.
+- No hay `cola/estado/*.json` en feature ni main. Se mantiene RECEPCION_GROK_NO_CONFIRMADA; markers de handoff no equivalen a recepción.
+- El dispatcher de feature solo selecciona `cola/entrada/*.json` y `maxdepth 1`; paquetes anidados no son dispatchables. `procesar_cola.py` usa fecha CDMX por defecto, pero permite override histórico con `--fecha`. `registro_editorial.py` ahora recorre recursivamente `handoffs/grok_inbox/`; esto supersede la nota anterior que decía que no los recorría.
+- Robot orbital: main contiene MP4, nueve frames, subtítulos y QA audiovisual 21/21 (87.57 s), con YouTube `ZG4iQgmWrLI` programado; no redispatchar. `ESTADO_EJECUCION.md` de main contradice los medios/programación actuales.
+- Kuroshio: se actualizó y releyó `ESTADO_EJECUCION.md` con el CI posterior #45502897065, commit ejecutado `82db8f2aa2d6c58bb80a93b82a804fcc4df453c9`, comando `python scripts/validar_storyboard.py proyectos/2026-11-18_dato-kuroshio-puente-atmosferico/storyboard.json`, resultado `OK`. El comando no incluyó `--check-doi`; DOI permanece PENDIENTE_RESOLVEDOR. Commit de actualización documental: `331cd68451a77894004866151bfa0474b32da97c`.
+- La rama feature está 1,414 commits ahead y 589 behind main; PR #3 sigue draft/open y modifica 13 data JSON y 64 storyboards. No merge.
+- Fuente: repositorio CAPCOT, ramas feature/main, briefs 2026-11-25 y `ESTADO_EJECUCION.md` de Kuroshio; lectura y relectura 2026-11-25.
