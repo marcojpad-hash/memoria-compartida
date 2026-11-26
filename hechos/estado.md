@@ -167,3 +167,11 @@ El control del 24-nov recibió una precisión adicional sobre la procedencia del
 - Kuroshio: se actualizó y releyó `ESTADO_EJECUCION.md` con el CI posterior #45502897065, commit ejecutado `82db8f2aa2d6c58bb80a93b82a804fcc4df453c9`, comando `python scripts/validar_storyboard.py proyectos/2026-11-18_dato-kuroshio-puente-atmosferico/storyboard.json`, resultado `OK`. El comando no incluyó `--check-doi`; DOI permanece PENDIENTE_RESOLVEDOR. Commit de actualización documental: `331cd68451a77894004866151bfa0474b32da97c`.
 - La rama feature está 1,414 commits ahead y 589 behind main; PR #3 sigue draft/open y modifica 13 data JSON y 64 storyboards. No merge.
 - Fuente: repositorio CAPCOT, ramas feature/main, briefs 2026-11-25 y `ESTADO_EJECUCION.md` de Kuroshio; lectura y relectura 2026-11-25.
+
+
+## Actualización Motor U7 — 2026-11-26
+
+- Se detectó que geometría multicapa ejecutaba y generaba salida, pero no aparecía como etapa runtime en CEB; el CEB marcaba `INCOMPLETE`. El código se corrigió para ejecutar esa pieza mediante `_ceb_stage`.
+- El workflow exploratorio se corrigió para seleccionar el archivo JSON cambiado en el push, regenerar y persistir manifiestos, y adjuntar el ledger CEB. Se añadió replay técnico V4 para comprobar la corrección.
+- Estado de cierre: código y configuración releídos desde la rama operativa; la nueva ejecución de Actions y el estado CEB posterior todavía no están verificados. No contar el replay como caso ciego ni como calibración.
+- Fuentes: rama `alterno/cameo-pesos` de `motor-u6-storage`; commits `1969b4e873b3d9cf2ccbca0404184a8edb794f2a`, `552291bf9def84fa7e42ee318a32ed78f433aab0`, `f0309fcefae1a9c0641b500c4d97b7a59e416ffa`; 2026-11-26.
